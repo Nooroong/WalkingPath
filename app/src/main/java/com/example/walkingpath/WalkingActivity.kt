@@ -208,7 +208,7 @@ class WalkingActivity :
 
     private fun drawPath() { //polyline을 그려주는 메소드
         val options: PolylineOptions =
-            PolylineOptions().add(startLatLng).add(endLatLng).width(15F).color(Color.BLACK)
+            PolylineOptions().add(startLatLng).add(endLatLng).width(12F).color(Color.DKGRAY)
                 .geodesic(true)
         polylines.add(map!!.addPolyline(options))
         map!!.moveCamera(CameraUpdateFactory.newLatLngZoom(startLatLng, 18F));
